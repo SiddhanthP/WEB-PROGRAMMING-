@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Factorial Calculator</title>
+<script>
+function factorialcalc() {
+  var number = parseInt(prompt("Enter a number to calculate its factorial", "Enter a whole number greater than zero"));
+  var factorial = 1;
+    for (var i = 1; i <= number; i++) {
+      factorial = factorial * i;
+    }
+    alert("The factorial of " + number + " is " + factorial);
+}
+</script>
+</head>
+<body>
+  <input type="button"  onclick="factorialcalc()" value="Calculate Factorial";>
+</body>
+</html>

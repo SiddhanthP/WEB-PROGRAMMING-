@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Display Date</title>
+  <script>
+    function displayDate() {
+      var currentDate = new Date();
+      var year = currentDate.getFullYear();
+      var month = currentDate.getMonth() + 1; // Note: Months are zero-indexed, so we add 1
+      var day = currentDate.getDate();
+      var formattedDate = (day < 10 ? "0" : "") + day + "-" + (month < 10 ? "0" : "") + month + "-" +year  ;
+      document.getElementById("dateOutput").value = formattedDate;
+    }
+  </script>
+</head>
+<body>
+  <h1>Display Date</h1>
+  <p>Click the button to display the current date:</p>
+  <input type="text" id="dateOutput" readonly="readonly" />
+  <button onclick="displayDate()">DISPLAY DATE</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Hello</title>
+</head>
+<body>
+  <input type="text" id="titletxt">
+  <button onclick="updp()">SUBMIT</button>
+  <script>
+    function updp() {
+      const name = document.getElementById("titletxt").value;
+      if (name) {
+        document.body.innerHTML = "<h1>Hello " + name + "</h1>";
+        document.title = "Welcome " + name;
+      }
+    }
+  </script>
+</body>
+</html>
+ 
